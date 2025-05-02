@@ -1,0 +1,33 @@
+# requirements.txt for TrustGuardian
+
+# Pin specific versions based on Colab compatibility
+numpy~=1.26.0
+scipy~=1.12.0
+
+# Core LangChain - let pip resolve compatible latest versions
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-pinecone
+langchain-huggingface
+
+# Models & Clients
+groq
+pinecone-client>=3.0.0 # Use modern client
+
+# Embeddings & NLP
+sentence-transformers
+transformers # Usually needed by sentence-transformers
+
+# Utilities
+tiktoken
+PyPDF2
+pymupdf # For fitz PDF extraction
+gdown # Included from setup steps
+
+# UI
+gradio
+
+# Optional, but good practice
+python-dotenv
