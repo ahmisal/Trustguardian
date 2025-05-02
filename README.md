@@ -48,11 +48,8 @@ The application follows a RAG (Retrieval-Augmented Generation) pattern with cond
 4.  **LLM (Groq API):** Uses the `llama-3.1-8b-instant` model hosted on Groq for language understanding and generation.
 5.  **Embeddings (Hugging Face):** Uses `sentence-transformers/all-MiniLM-L6-v2` via the `HuggingFaceEmbeddings` integration to create vector representations of text.
 
-**(Optional) Architecture Diagram:**
+![Trustguardian drawio](https://github.com/user-attachments/assets/f2e955db-a258-4661-a6c4-b886c41333ac)
 
-*(Consider creating a simple diagram using a tool like diagrams.net, Miro, Excalidraw, etc., uploading it as 'architecture.png' to the repo, and uncommenting the line below)*
-*Text Description:*
-*The system uses a Gradio UI hosted on Hugging Face Spaces. User input goes to the Python backend (`app.py`). If a document is uploaded for specific analysis, text is extracted (PyMuPDF), truncated, and sent with the query to the Groq LLM. Otherwise, a Langchain `ConversationalRetrievalChain` retrieves relevant text chunks from Pinecone (populated KB) and combines them with chat history before querying the Groq LLM. Embeddings use Sentence Transformers.*
 
 ## Setup (Local Development/Testing)
 
