@@ -27,7 +27,10 @@ pymupdf # For fitz PDF extraction
 gdown # Included from setup steps
 
 # UI
-gradio
+
 
 # Optional, but good practice
 python-dotenv
+
+fastapi
+uvicorn[standard]
